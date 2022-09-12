@@ -1,4 +1,4 @@
-                           #### UH Energy Sustainable Energy Development Program - Bronze Belt #####
+                        #### UH Energy Sustainable Energy Development Program - Bronze Belt #####
 
 I enrolled in this program to get more hands-on experience in the oil and gas industry on data analytics and data science concepts and applications with real-world examples and energy sector data. 
 
@@ -12,7 +12,7 @@ Supervised machine learning concepts were introduced, and we were able to build 
        Instead, I will provide a screenshot of my workflow and some of my       
        work process to show the findings and testing that were involved in our labs as much as I can  ******
        
- ***** Also, you will notice I have some .xlsx files uploaded raw within some labs. 
+ ***** Also, you will notice I have some .xlsx and .csv files uploaded raw within some labs. 
        These files are meant to be uploaded within the "Files" widget within Orange in order to 
        explore the dataset given for the purpose of the lab, if you wish to try it yourself. 
        I will share my findings within each lab (PDF files) and how I set up my Orange workflow, or 
