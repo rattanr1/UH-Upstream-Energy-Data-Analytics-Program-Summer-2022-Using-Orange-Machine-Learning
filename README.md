@@ -23,7 +23,7 @@ Supervised machine learning concepts were introduced, and we were able to build 
 
 
 
-"Bronze" Belt Description:
+<ins>"Bronze" Belt Description:</ins>
 
 Designed and presented by leaders from industry and accomplished faculty from the University of Houston, the program provides a structured series of micro-credentials or “badges” that cover the changing energy landscape and build the skills to succeed in it. The Bronze belt consists of three badges:
 
