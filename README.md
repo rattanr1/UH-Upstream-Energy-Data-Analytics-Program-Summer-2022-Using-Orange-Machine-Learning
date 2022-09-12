@@ -8,14 +8,15 @@ Being in the Bronze Belt helped me get a birds-eye view of the data analytics pr
 
 Supervised machine learning concepts were introduced, and we were able to build data-driven models via supervised machine learning algorithms and engaged in hands-on labs using the Orange data mining tool for designing and evaluating the models. 
 
-*****  Please note that the Orange Workflow is an ows file, and seems I cannot uploaded those here. 
+*****  Please note that the Orange Workflow are ows files, and seems I cannot uploaded those here to be visually readable. 
        Instead, I will provide a screenshot of my workflow and some of my       
        work process to show the findings and testing that were involved in our labs as much as I can  ******
        
  ***** Also, you will notice I have some .xlsx files uploaded raw within some labs. 
        These files are meant to be uploaded within the "Files" widget within Orange in order to 
-       explore the dataset given for the prupose of the lab, if you wish to try it yourself. 
-       I will share my findings within each lab and notes of my results. *****
+       explore the dataset given for the purpose of the lab, if you wish to try it yourself. 
+       I will share my findings within each lab (PDF files) and how I set up my Orange workflow, or 
+       pipeline as they call it, in a PNG file. *****
 
 
 "Bronze" Belt Description:
