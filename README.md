@@ -1,12 +1,14 @@
-          #### UH Energy Sustainable Energy Development Program - Bronze Belt #####
+                               #### UH Energy Sustainable Energy Development Program - Bronze Belt #####
 
-I enrolled into this program to get more on the hands-on experience in the oil and gas industry on data analytics concepts and applications with real world examples.
+I enrolled into this program to get more on the hands-on experience in the oil and gas industry on data analytics and data science concepts and applications with real world examples and energy sector data. 
+
+I was able to design data mining models for classifying and clustering via various machine learning algorithms including kNN, decision trees, linear regression, k-means clustering, and many more techniques. I was also able to evaluate the models’ performance via various validation techniques including accuracy measures, and cost sensitive measures such as the ROC approach. 
 
 Designed and presented by leaders from industry and accomplished faculty from the University of Houston, the program provides a structured series of micro-credentials or “badges” that cover the changing energy landscape and build the skills to succeed in it.
 
-Participants in the Bronze Belt will get a bird-eye view of the data analytics process and explore one of the four data analytics modules called exploratory data analysis, a necessary step to get the feel of the data and data preprocessing, and to clean and format the data before building machine learning models. 
+Being in the Bronze Belt helped me get a bird-eye view of the data analytics process and explore one of the four data analytics modules called exploratory data analysis, a necessary step to get the feel of the data and data preprocessing, and to clean and format the data before building machine learning models. 
 
-Supervised machine learning concepts will be introduced, and participants will be able to build data-driven models via supervised machine learning algorithms. Two representative machine learning algorithms - one for classification and the other for regression - will be covered. Learning will be reinforced with through a hands-on labs using Orange software.
+Supervised machine learning concepts are introduced, and we were able to build data-driven models via supervised machine learning algorithms and engaged in hands-on labs using Orange data mining tool for designing and evaluating the models. 
 
 
 Belt Descriptions:
