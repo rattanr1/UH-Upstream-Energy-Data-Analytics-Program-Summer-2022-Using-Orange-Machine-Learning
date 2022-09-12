@@ -1,4 +1,4 @@
-                               #### UH Energy Sustainable Energy Development Program - Bronze Belt #####
+                           #### UH Energy Sustainable Energy Development Program - Bronze Belt #####
 
 I enrolled in this program to get more hands-on experience in the oil and gas industry on data analytics and data science concepts and applications with real-world examples and energy sector data. 
 
@@ -7,6 +7,10 @@ I was able to design data mining models for classifying and clustering via vario
 Being in the Bronze Belt helped me get a birds-eye view of the data analytics process and explore one of the four data analytics modules called exploratory data analysis, a necessary step to get the feel of the data and data preprocessing, and to clean and format the data before building machine learning models.
 
 Supervised machine learning concepts were introduced, and we were able to build data-driven models via supervised machine learning algorithms and engaged in hands-on labs using the Orange data mining tool for designing and evaluating the models. 
+
+*****  Please note that the Orange Workflow is an ows file, and seems I cannot uploaded those here. 
+       Instead, I will provide a screenshot of my workflow and some of my       
+       work process to show the findings and testing that were involved in our labs as much as I can  ******
 
 
 "Bronze" Belt Description:
