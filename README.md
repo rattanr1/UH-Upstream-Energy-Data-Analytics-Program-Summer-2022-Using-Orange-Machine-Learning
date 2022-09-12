@@ -1,6 +1,6 @@
                         #### UH Energy Sustainable Energy Development Program - Bronze Belt #####
 
-I enrolled in this program to get more hands-on experience in the oil and gas industry on data analytics and data science concepts and applications with real-world examples and energy sector data. 
+I enrolled in this program to get more hands-on experience in the oil and gas industry on data analytics and data science concepts and applications with real-world examples and energy sector data. I also had the chance to work with Tableau and Kaggle Competitions!
 
 I was able to design data mining models for classifying and clustering via various machine learning algorithms including kNN, decision trees, linear regression, k-means clustering, and many more techniques. I was also able to evaluate the models’ performance via various validation techniques including accuracy and cost-sensitive measures such as the ROC approach.
 
