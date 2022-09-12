@@ -1,0 +1,364 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Orange Report</title>
+
+    <style>
+    html, body, table {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        margin:0px;
+        padding:0;
+        border:0 none;
+    }
+
+    h1, h2 , h3, h4, h5 {
+       padding: 1px;
+       font-size:100%;
+    }
+
+    h1 {
+        color: white;
+        background-color: black;
+        padding: 4px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        border-bottom: 1px solid black;
+        padding-left: 2px;
+    }
+
+    ul, table, p {
+        padding: 10px;
+    }
+
+    table {
+        margin-left: -6px;
+    }
+
+    span.timestamp {
+        position: absolute;
+        right: 40px;
+        color:#ddd;
+    }
+
+    div.selected, div.normal {
+        margin: 5px;
+    }
+
+    div.selected {
+        background: #ddd;
+    }
+    @media print{
+        div.selected {
+            background: inherit;
+        }
+        ::-webkit-input-placeholder {
+            color: transparent;
+        }
+    }
+
+    div.content {
+        margin-left: 15px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 2px 6px 2px 6px;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    @media screen {
+        td, th {
+            white-space: nowrap;
+        }
+    }
+
+    .caption {
+        text-align: center;
+        font-size: 90%;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-height: 20cm;
+    }
+
+    span.legend-square {
+        width: 1em;
+        height: 1em;
+        margin-right: 6px;
+        display: inline-block;
+    }
+
+    span.legend-item {
+        margin-right: 24px;
+    }
+
+    textarea {
+        border: 1px solid silver;
+        font-style: italic;
+        width: 100%;
+        height: 4em;
+    }
+
+    .textwrapper {
+        padding: 15px;
+    }
+
+    div.normal textarea:invalid {
+        display: none;
+    }
+
+    div.selected textarea {
+        display: block;
+    }
+
+    @media print{
+        section.section, img {
+            page-break-inside: avoid;
+        }
+    }
+    </style>
+    <script>
+    function scrollToId(id) {
+        var sel_el = document.getElementById(id);
+        if (sel_el != undefined) {
+            sel_el.scrollIntoView();
+            return true;
+        }
+        return false;
+    };
+
+    function setSelectedId(id) {
+        var sel_el = document.getElementsByClassName('selected')[0];
+        if (sel_el != undefined && sel_el.id != id) {
+           sel_el.className = 'normal';
+        }
+        sel_el = document.getElementById(id);
+        if (sel_el != undefined) {
+            sel_el.className = 'selected';
+            return true;
+        }
+        return false;
+    };
+    </script>
+
+</head><body onload="(function (id) {     setSelectedId(id); scrollToId(id); }(&quot;2350656071280&quot;));">
+
+ 
+
+<div id="2350656071280" class="selected" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Predictions <span class="timestamp">Sun Jul 03 22, 22:37:11</span></h1><div class="content">
+<h2>Info</h2><p>Data:<br><nobr><b><u>Test</u></b>: 3378 instances, 6 variables</nobr><br><nobr>Features: 5 numeric (1.3% missing values)</nobr><br><nobr>Metas: numeric</nobr></p><hr>Model: 1 model<ul><li>Lithology</li></ul><br>Showing probabilities for: Basin Fill<p></p><h2>Data &amp; Predictions</h2><table>
+  <tbody><tr>
+    <th></th><th>Lithology</th><th>ID</th><th>GR</th><th>DENS</th><th>DEEP_RES</th><th>SP</th><th>CAL</th></tr>
+  <tr>
+    <th>1</th><td>1.00 → Basin Fill</td><td>1</td><td>113.6820</td><td>2.0850</td><td>0.9170</td><td>3.3940</td><td>13.7960</td></tr>
+  <tr>
+    <th>2</th><td>0.00 → Granitiod</td><td>2</td><td>169.6000</td><td>2.5170</td><td>2.3760</td><td>-0.9350</td><td>12.1490</td></tr>
+  <tr>
+    <th>3</th><td>0.00 → Granitiod</td><td>3</td><td>132.5580</td><td>3.3690</td><td>3.4200</td><td>5.3580</td><td>10.6000</td></tr>
+  <tr>
+    <th>4</th><td>0.00 → Granitiod</td><td>4</td><td>190.4640</td><td>2.1740</td><td>2.8680</td><td>-1.5330</td><td>10.4000</td></tr>
+  <tr>
+    <th>5</th><td>0.00 → Granitiod</td><td>5</td><td>159.3790</td><td>3.3290</td><td>33.2820</td><td>-2.8610</td><td>8.9000</td></tr>
+  <tr>
+    <th>6</th><td>0.00 → Granitiod</td><td>6</td><td>98.8998</td><td>2.4470</td><td>8.6893</td><td>40.0000</td><td>3.3340</td></tr>
+  <tr>
+    <th>7</th><td>0.00 → Granitiod</td><td>7</td><td>185.5100</td><td>2.5410</td><td>2.1780</td><td>2.7430</td><td>13.3670</td></tr>
+  <tr>
+    <th>8</th><td>0.00 → Granitiod</td><td>8</td><td>192.2770</td><td>?</td><td>1.4520</td><td>1.0540</td><td>11.0380</td></tr>
+  <tr>
+    <th>9</th><td>0.00 → Granitiod</td><td>9</td><td>157.6984</td><td>2.4102</td><td>12.0539</td><td>-23.4375</td><td>10.6931</td></tr>
+  <tr>
+    <th>10</th><td>0.00 → Granitiod</td><td>10</td><td>78.7790</td><td>2.6176</td><td>21.3571</td><td>-90.3906</td><td>9.8244</td></tr>
+  <tr>
+    <th>11</th><td>0.00 → Granitiod</td><td>11</td><td>125.8400</td><td>2.3520</td><td>5.2190</td><td>1.4970</td><td>11.4350</td></tr>
+  <tr>
+    <th>12</th><td>0.00 → Granitiod</td><td>12</td><td>166.4621</td><td>2.3741</td><td>13.0251</td><td>-57.3438</td><td>10.5000</td></tr>
+  <tr>
+    <th>13</th><td>0.00 → Granitiod</td><td>13</td><td>62.6248</td><td>2.8814</td><td>608.2859</td><td>7.9688</td><td>8.9317</td></tr>
+  <tr>
+    <th>14</th><td>0.00 → Granitiod</td><td>14</td><td>116.2170</td><td>2.7120</td><td>6.3480</td><td>-2.9280</td><td>10.7000</td></tr>
+  <tr>
+    <th>15</th><td>0.00 → Granitiod</td><td>15</td><td>38.8650</td><td>2.7620</td><td>23.0740</td><td>1.5960</td><td>10.6000</td></tr>
+  <tr>
+    <th>16</th><td>1.00 → Basin Fill</td><td>16</td><td>36.7910</td><td>2.3576</td><td>61.5245</td><td>57.5781</td><td>3.4547</td></tr>
+  <tr>
+    <th>17</th><td>0.00 → Granitiod</td><td>17</td><td>182.2837</td><td>2.5584</td><td>1950.0000</td><td>1.9531</td><td>9.0041</td></tr>
+  <tr>
+    <th>18</th><td>0.33 → Granitiod</td><td>18</td><td>79.0054</td><td>2.1994</td><td>45.6846</td><td>56.4063</td><td>3.3823</td></tr>
+  <tr>
+    <th>19</th><td>0.00 → Granitiod</td><td>19</td><td>176.8620</td><td>2.5460</td><td>2.2570</td><td>1.0400</td><td>12.6920</td></tr>
+  <tr>
+    <th>20</th><td>0.00 → Granitiod</td><td>20</td><td>80.2540</td><td>3.4920</td><td>4.8280</td><td>4.3540</td><td>10.9000</td></tr>
+  <tr>
+    <th>21</th><td>0.00 → Granitiod</td><td>21</td><td>127.0650</td><td>?</td><td>1.0530</td><td>2.3460</td><td>14.3020</td></tr>
+  <tr>
+    <th>22</th><td>0.00 → Granitiod</td><td>22</td><td>175.6014</td><td>2.5805</td><td>1538.4233</td><td>148.8281</td><td>8.8111</td></tr>
+  <tr>
+    <th>23</th><td>0.00 → Granitiod</td><td>23</td><td>149.1390</td><td>2.3550</td><td>2.1770</td><td>1.4130</td><td>12.3440</td></tr>
+  <tr>
+    <th>24</th><td>0.00 → Granitiod</td><td>24</td><td>147.1520</td><td>2.0450</td><td>6.7970</td><td>1.6580</td><td>11.5000</td></tr>
+  <tr>
+    <th>25</th><td>0.00 → Granitiod</td><td>25</td><td>227.1294</td><td>2.5785</td><td>889.5586</td><td>109.4643</td><td>8.7869</td></tr>
+  <tr>
+    <th>26</th><td>0.00 → Granitiod</td><td>26</td><td>158.2360</td><td>3.7940</td><td>35.8700</td><td>-1.0430</td><td>10.2000</td></tr>
+  <tr>
+    <th>27</th><td>0.00 → Granitiod</td><td>27</td><td>138.5020</td><td>2.5390</td><td>2.3180</td><td>1.8100</td><td>9.5000</td></tr>
+  <tr>
+    <th>28</th><td>1.00 → Basin Fill</td><td>28</td><td>86.7970</td><td>?</td><td>0.4190</td><td>-1.3160</td><td>14.2850</td></tr>
+  <tr>
+    <th>29</th><td>0.00 → Granitiod</td><td>29</td><td>180.3190</td><td>2.5530</td><td>2.1980</td><td>0.7300</td><td>13.3640</td></tr>
+  <tr>
+    <th>30</th><td>0.00 → Granitiod</td><td>30</td><td>171.4370</td><td>2.3130</td><td>2.8700</td><td>-0.6260</td><td>11.0010</td></tr>
+  <tr>
+    <th>31</th><td>0.00 → Granitiod</td><td>31</td><td>94.5510</td><td>3.4400</td><td>6.0810</td><td>3.9440</td><td>11.5000</td></tr>
+  <tr>
+    <th>32</th><td>1.00 → Basin Fill</td><td>32</td><td>70.8720</td><td>?</td><td>0.4120</td><td>-2.6200</td><td>14.8580</td></tr>
+  <tr>
+    <th>33</th><td>0.00 → Granitiod</td><td>33</td><td>169.1010</td><td>2.3270</td><td>1.1990</td><td>3.2990</td><td>14.2710</td></tr>
+  <tr>
+    <th>34</th><td>1.00 → Basin Fill</td><td>34</td><td>49.4670</td><td>?</td><td>1.1700</td><td>-3.6890</td><td>14.1440</td></tr>
+  <tr>
+    <th>35</th><td>0.00 → Granitiod</td><td>35</td><td>142.9465</td><td>2.6177</td><td>283.1865</td><td>37.5000</td><td>8.8231</td></tr>
+  <tr>
+    <th>36</th><td>0.00 → Granitiod</td><td>36</td><td>167.2180</td><td>2.5680</td><td>3.0260</td><td>1.5730</td><td>12.1340</td></tr>
+  <tr>
+    <th>37</th><td>0.00 → Granitiod</td><td>37</td><td>164.5760</td><td>2.4080</td><td>4.8940</td><td>-0.8140</td><td>11.5420</td></tr>
+  <tr>
+    <th>38</th><td>0.00 → Granitiod</td><td>38</td><td>130.5170</td><td>2.6460</td><td>5.0770</td><td>4.8660</td><td>12.8230</td></tr>
+  <tr>
+    <th>39</th><td>1.00 → Basin Fill</td><td>39</td><td>88.4830</td><td>?</td><td>0.4560</td><td>-1.2350</td><td>14.1180</td></tr>
+  <tr>
+    <th>40</th><td>1.00 → Basin Fill</td><td>40</td><td>25.4598</td><td>2.5176</td><td>33.6859</td><td>59.2969</td><td>3.4426</td></tr>
+  <tr>
+    <th>41</th><td>0.00 → Granitiod</td><td>41</td><td>164.8715</td><td>2.6154</td><td>376.6652</td><td>122.8571</td><td>8.7990</td></tr>
+  <tr>
+    <th>42</th><td>0.00 → Granitiod</td><td>42</td><td>149.4680</td><td>2.4940</td><td>4.4230</td><td>3.7320</td><td>13.3910</td></tr>
+  <tr>
+    <th>43</th><td>0.00 → Granitiod</td><td>43</td><td>621.8763</td><td>2.6033</td><td>1186.3798</td><td>161.0156</td><td>9.4867</td></tr>
+  <tr>
+    <th>44</th><td>0.00 → Granitiod</td><td>44</td><td>94.5041</td><td>2.2610</td><td>11.6857</td><td>50.0000</td><td>3.3581</td></tr>
+  <tr>
+    <th>45</th><td>1.00 → Basin Fill</td><td>45</td><td>27.4293</td><td>2.3034</td><td>48.1658</td><td>62.4219</td><td>3.4547</td></tr>
+  <tr>
+    <th>46</th><td>0.00 → Granitiod</td><td>46</td><td>165.9570</td><td>2.5000</td><td>1.8620</td><td>1.8720</td><td>13.6930</td></tr>
+  <tr>
+    <th>47</th><td>0.00 → Granitiod</td><td>47</td><td>147.0730</td><td>3.8270</td><td>36.8370</td><td>0.2740</td><td>10.2000</td></tr>
+  <tr>
+    <th>48</th><td>0.00 → Granitiod</td><td>48</td><td>138.2370</td><td>2.6130</td><td>3.3560</td><td>1.9790</td><td>12.8290</td></tr>
+  <tr>
+    <th>49</th><td>0.00 → Granitiod</td><td>49</td><td>129.3020</td><td>2.4595</td><td>186.2068</td><td>36.6071</td><td>9.1851</td></tr>
+  <tr>
+    <th>50</th><td>0.00 → Granitiod</td><td>50</td><td>138.2160</td><td>2.1020</td><td>1.0720</td><td>4.8930</td><td>14.9190</td></tr>
+  <tr>
+    <th>51</th><td>0.00 → Granitiod</td><td>51</td><td>169.6299</td><td>2.4670</td><td>10.4846</td><td>-41.6406</td><td>10.8137</td></tr>
+  <tr>
+    <th>52</th><td>0.00 → Granitiod</td><td>52</td><td>117.0960</td><td>3.7860</td><td>19.7570</td><td>5.4200</td><td>9.6000</td></tr>
+  <tr>
+    <th>53</th><td>0.00 → Granitiod</td><td>53</td><td>124.0720</td><td>2.6540</td><td>5.4650</td><td>4.1180</td><td>12.7950</td></tr>
+  <tr>
+    <th>54</th><td>0.00 → Granitiod</td><td>54</td><td>92.0160</td><td>2.7740</td><td>7.8650</td><td>3.0850</td><td>11.0000</td></tr>
+  <tr>
+    <th>55</th><td>0.00 → Granitiod</td><td>55</td><td>181.6910</td><td>2.3350</td><td>1.6990</td><td>3.5560</td><td>13.4820</td></tr>
+  <tr>
+    <th>56</th><td>0.00 → Granitiod</td><td>56</td><td>177.8497</td><td>2.4098</td><td>11.5924</td><td>-32.5000</td><td>10.9585</td></tr>
+  <tr>
+    <th>57</th><td>0.00 → Granitiod</td><td>57</td><td>185.0900</td><td>2.4530</td><td>2.6270</td><td>0.4280</td><td>10.6000</td></tr>
+  <tr>
+    <th>58</th><td>1.00 → Basin Fill</td><td>58</td><td>85.9880</td><td>?</td><td>0.4150</td><td>-3.2740</td><td>14.0950</td></tr>
+  <tr>
+    <th>59</th><td>0.00 → Granitiod</td><td>59</td><td>101.9880</td><td>2.5340</td><td>4.5570</td><td>2.9790</td><td>10.1000</td></tr>
+  <tr>
+    <th>60</th><td>0.00 → Granitiod</td><td>60</td><td>125.6220</td><td>2.6626</td><td>1182.8702</td><td>75.0781</td><td>8.9076</td></tr>
+  <tr>
+    <th>61</th><td>0.00 → Granitiod</td><td>61</td><td>252.5304</td><td>2.5768</td><td>1592.6666</td><td>68.0469</td><td>8.9076</td></tr>
+  <tr>
+    <th>62</th><td>0.00 → Granitiod</td><td>62</td><td>174.4110</td><td>?</td><td>1.5930</td><td>0.5880</td><td>10.3410</td></tr>
+  <tr>
+    <th>63</th><td>0.00 → Granitiod</td><td>63</td><td>88.7979</td><td>2.5783</td><td>7.9699</td><td>-75.0000</td><td>9.8003</td></tr>
+  <tr>
+    <th>64</th><td>0.00 → Granitiod</td><td>64</td><td>129.4270</td><td>2.4110</td><td>3.7130</td><td>-0.5610</td><td>11.4860</td></tr>
+  <tr>
+    <th>65</th><td>1.00 → Basin Fill</td><td>65</td><td>96.3304</td><td>2.1740</td><td>184.6757</td><td>56.6406</td><td>3.4064</td></tr>
+  <tr>
+    <th>66</th><td>0.00 → Granitiod</td><td>66</td><td>159.7924</td><td>2.5622</td><td>302.5783</td><td>109.8438</td><td>8.7869</td></tr>
+  <tr>
+    <th>67</th><td>0.00 → Granitiod</td><td>67</td><td>75.2900</td><td>3.8080</td><td>4.9070</td><td>3.9570</td><td>10.0000</td></tr>
+  <tr>
+    <th>68</th><td>0.00 → Granitiod</td><td>68</td><td>157.2990</td><td>2.4355</td><td>11.0023</td><td>-22.7083</td><td>10.5121</td></tr>
+  <tr>
+    <th>69</th><td>0.00 → Granitiod</td><td>69</td><td>157.8992</td><td>2.4345</td><td>12.7543</td><td>-19.9219</td><td>10.4397</td></tr>
+  <tr>
+    <th>70</th><td>0.00 → Granitiod</td><td>70</td><td>91.7078</td><td>2.7553</td><td>7.1942</td><td>45.9722</td><td>3.2858</td></tr>
+  <tr>
+    <th>71</th><td>0.33 → Granitiod</td><td>71</td><td>69.8570</td><td>2.5900</td><td>1.7610</td><td>4.4460</td><td>14.2570</td></tr>
+  <tr>
+    <th>72</th><td>0.00 → Granitiod</td><td>72</td><td>129.2990</td><td>2.5800</td><td>3.7060</td><td>0.0460</td><td>9.9000</td></tr>
+  <tr>
+    <th>73</th><td>0.00 → Granitiod</td><td>73</td><td>209.4312</td><td>2.5616</td><td>715.9492</td><td>110.0000</td><td>8.7628</td></tr>
+  <tr>
+    <th>74</th><td>0.00 → Granitiod</td><td>74</td><td>147.5250</td><td>3.4500</td><td>54.6160</td><td>1.2300</td><td>10.0000</td></tr>
+  <tr>
+    <th>75</th><td>0.00 → Granitiod</td><td>75</td><td>153.5230</td><td>2.1670</td><td>4.0340</td><td>-2.4390</td><td>10.7270</td></tr>
+  <tr>
+    <th>76</th><td>0.00 → Granitiod</td><td>76</td><td>148.2838</td><td>2.5855</td><td>285.4554</td><td>158.3594</td><td>9.7279</td></tr>
+  <tr>
+    <th>77</th><td>0.00 → Granitiod</td><td>77</td><td>174.6897</td><td>2.4925</td><td>826.4093</td><td>78.7500</td><td>8.6422</td></tr>
+  <tr>
+    <th>78</th><td>0.00 → Granitiod</td><td>78</td><td>68.3610</td><td>2.8059</td><td>121.7257</td><td>-72.5781</td><td>9.3419</td></tr>
+  <tr>
+    <th>79</th><td>0.00 → Granitiod</td><td>79</td><td>152.8520</td><td>2.5886</td><td>157.2126</td><td>38.1250</td><td>9.2333</td></tr>
+  <tr>
+    <th>80</th><td>1.00 → Basin Fill</td><td>80</td><td>100.3480</td><td>?</td><td>0.7350</td><td>1.2370</td><td>14.0580</td></tr>
+  <tr>
+    <th>81</th><td>0.00 → Granitiod</td><td>81</td><td>154.3640</td><td>3.7620</td><td>107.1320</td><td>-0.6150</td><td>9.5000</td></tr>
+  <tr>
+    <th>82</th><td>0.00 → Granitiod</td><td>82</td><td>177.9079</td><td>2.3990</td><td>10.7226</td><td>-38.9063</td><td>10.8861</td></tr>
+  <tr>
+    <th>83</th><td>0.33 → Granitiod</td><td>83</td><td>80.1440</td><td>2.4500</td><td>1.0820</td><td>2.8310</td><td>14.2380</td></tr>
+  <tr>
+    <th>84</th><td>0.00 → Granitiod</td><td>84</td><td>185.9946</td><td>2.6423</td><td>272.9758</td><td>122.3438</td><td>8.8835</td></tr>
+  <tr>
+    <th>85</th><td>0.00 → Granitiod</td><td>85</td><td>131.3875</td><td>2.6189</td><td>1115.8752</td><td>73.2813</td><td>8.8352</td></tr>
+  <tr>
+    <th>86</th><td>0.00 → Granitiod</td><td>86</td><td>121.4570</td><td>1.9930</td><td>3.5950</td><td>0.6950</td><td>10.9000</td></tr>
+  <tr>
+    <th>87</th><td>0.00 → Granitiod</td><td>87</td><td>122.3490</td><td>?</td><td>4.1850</td><td>-1.0540</td><td>9.7010</td></tr>
+  <tr>
+    <th>88</th><td>0.00 → Granitiod</td><td>88</td><td>222.2757</td><td>2.6089</td><td>802.5457</td><td>46.4063</td><td>9.6314</td></tr>
+  <tr>
+    <th>89</th><td>0.00 → Granitiod</td><td>89</td><td>95.4762</td><td>2.6112</td><td>63.8590</td><td>-72.8125</td><td>9.4143</td></tr>
+  <tr>
+    <th>90</th><td>0.00 → Granitiod</td><td>90</td><td>125.8520</td><td>3.7020</td><td>26.8620</td><td>3.9920</td><td>9.8000</td></tr>
+  <tr>
+    <th>91</th><td>1.00 → Basin Fill</td><td>91</td><td>26.5443</td><td>2.3500</td><td>138.9484</td><td>61.8750</td><td>3.4547</td></tr>
+  <tr>
+    <th>92</th><td>0.00 → Granitiod</td><td>92</td><td>185.2210</td><td>2.5990</td><td>2.0610</td><td>2.9980</td><td>13.2870</td></tr>
+  <tr>
+    <th>93</th><td>0.00 → Granitiod</td><td>93</td><td>138.4990</td><td>3.7930</td><td>8.2100</td><td>6.7020</td><td>10.1000</td></tr>
+  <tr>
+    <th>94</th><td>1.00 → Basin Fill</td><td>94</td><td>109.5900</td><td>?</td><td>0.7020</td><td>0.9110</td><td>14.0310</td></tr>
+  <tr>
+    <th>95</th><td>0.00 → Granitiod</td><td>95</td><td>107.0290</td><td>2.1770</td><td>0.7220</td><td>1.6410</td><td>14.3440</td></tr>
+  <tr>
+    <th>96</th><td>0.00 → Granitiod</td><td>96</td><td>85.1139</td><td>3.9578</td><td>6.9046</td><td>44.2361</td><td>8.8111</td></tr>
+  <tr>
+    <th>97</th><td>0.00 → Granitiod</td><td>97</td><td>260.2190</td><td>2.4510</td><td>1.3970</td><td>4.1260</td><td>12.5290</td></tr>
+  <tr>
+    <th>98</th><td>1.00 → Basin Fill</td><td>98</td><td>85.1240</td><td>?</td><td>0.4490</td><td>-1.0280</td><td>14.1910</td></tr>
+  <tr>
+    <th>99</th><td>0.00 → Granitiod</td><td>99</td><td>86.9116</td><td>2.5394</td><td>6.9536</td><td>53.7500</td><td>3.3340</td></tr>
+  <tr>
+    <th>100</th><td>0.00 → Granitiod</td><td>100</td><td>188.8180</td><td>2.6068</td><td>347.5431</td><td>83.7500</td><td>8.8111</td></tr>
+<tr><th></th><td colspan="8"><b>+ 3178 more</b></td></tr>
+            </tbody></table><h2>Scores</h2><table>
+<tbody><tr><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Model</th></tr></tbody></table></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div></body></html>
